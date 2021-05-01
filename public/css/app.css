@@ -1,0 +1,17 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.card img{
+    padding:15px;
+    height:50%;
+}
+
+.card{
+    height:400px;
+}
+
+
+
