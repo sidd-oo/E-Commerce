@@ -1,0 +1,24 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+<div class="container" style="margin-top: 3rem;width:80vw ;">
+        <form action = "/products/<%=product.id%>?_method=PATCH" method="POST" style="width:50%; margin:10px auto;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Product Name" name = "product[name]" required value="<%=product.name%>">
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image URL</label>
+                    <input type="text" class="form-control" id="img" placeholder="Image URL" name = "product[img]" required value="<%=product.img%>">
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <textarea id="desc" class="form-control" cols="30" rows="10" name = "product[desc]" required><%=product.desc%></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</div>
+    
+
+<%- include("../partials/footer")%>
